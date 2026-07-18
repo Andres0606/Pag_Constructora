@@ -39,81 +39,88 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          {navItems.map((item) => {
-            if (item.label === "Servicios") {
-              return (
-                <div
-                  key={item.path}
-                  className="relative"
-                  onMouseEnter={() => setServicesOpen(true)}
-                  onMouseLeave={() => setServicesOpen(false)}
+<nav className="hidden md:flex items-center space-x-8">
+  {navItems.map((item) => {
+    if (item.label === "Servicios") {
+      return (
+        <div
+          key={item.path}
+          className="relative flex h-full items-center"
+          onMouseEnter={() => setServicesOpen(true)}
+          onMouseLeave={() => setServicesOpen(false)}
+        >
+          <Link
+            href="/servicios"
+            className={`flex items-center gap-1 py-2 text-sm font-medium transition-colors ${
+              pathname.startsWith("/servicios")
+                ? "text-[#0B3A36]"
+                : "text-gray-600 hover:text-[#0B3A36]"
+            }`}
+          >
+            Servicios
+            <ChevronDown
+              className={`h-4 w-4 transition-transform ${
+                servicesOpen ? "rotate-180" : ""
+              }`}
+            />
+          </Link>
+
+          {servicesOpen && (
+            <div className="absolute left-0 top-full pt-2 w-64">
+              <div className="overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg">
+
+                <Link
+                  href="/servicios/consultoria"
+                  onClick={() => setServicesOpen(false)}
+                  className="block px-5 py-3 text-sm transition-colors hover:bg-gray-50 hover:text-[#0B3A36]"
                 >
-                  <Link
-                    href="/servicios"
-                    className={`flex items-center gap-1 py-2 text-sm font-medium transition-colors ${
-                      pathname.startsWith("/servicios")
-                        ? "text-[#0B3A36]"
-                        : "text-gray-600 hover:text-[#0B3A36]"
-                    }`}
-                  >
-                    Servicios
-                    <ChevronDown
-                      className={`h-4 w-4 transition-transform ${
-                        servicesOpen ? "rotate-180" : ""
-                      }`}
-                    />
-                  </Link>
+                  Consultoría
+                </Link>
 
-                  {servicesOpen && (
-                    <div className="absolute left-0 top-full mt-2 w-64 rounded-md border border-gray-200 bg-white shadow-lg overflow-hidden">
-                      <Link
-                        href="/servicios/consultoria"
-                        className="block px-5 py-3 text-sm hover:bg-gray-50 hover:text-[#0B3A36]"
-                      >
-                        Consultoría
-                      </Link>
+                <Link
+                  href="/servicios/patologias"
+                  onClick={() => setServicesOpen(false)}
+                  className="block px-5 py-3 text-sm transition-colors hover:bg-gray-50 hover:text-[#0B3A36]"
+                >
+                  Patologías de Obra
+                </Link>
 
-                      <Link
-                        href="/servicios/patologias"
-                        className="block px-5 py-3 text-sm hover:bg-gray-50 hover:text-[#0B3A36]"
-                      >
-                        Patologías de Obra
-                      </Link>
+                <Link
+                  href="/servicios/estructuras-madera"
+                  onClick={() => setServicesOpen(false)}
+                  className="block px-5 py-3 text-sm transition-colors hover:bg-gray-50 hover:text-[#0B3A36]"
+                >
+                  Estructuras en Madera
+                </Link>
 
-                      <Link
-                        href="/servicios/estructuras-madera"
-                        className="block px-5 py-3 text-sm hover:bg-gray-50 hover:text-[#0B3A36]"
-                      >
-                        Estructuras en Madera
-                      </Link>
-                    </div>
-                  )}
-                </div>
-              );
-            }
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    }
 
-            const isActive = pathname === item.path;
+    const isActive = pathname === item.path;
 
-            return (
-              <Link
-                key={item.path}
-                href={item.path}
-                className={`relative py-2 text-sm font-medium transition-colors ${
-                  isActive
-                    ? "text-[#0B3A36]"
-                    : "text-gray-600 hover:text-[#0B3A36]"
-                }`}
-              >
-                {item.label}
+    return (
+      <Link
+        key={item.path}
+        href={item.path}
+        className={`relative py-2 text-sm font-medium transition-colors ${
+          isActive
+            ? "text-[#0B3A36]"
+            : "text-gray-600 hover:text-[#0B3A36]"
+        }`}
+      >
+        {item.label}
 
-                {isActive && (
-                  <span className="absolute bottom-0 left-0 h-0.5 w-full bg-[#0B3A36]" />
-                )}
-              </Link>
-            );
-          })}
-        </nav>
+        {isActive && (
+          <span className="absolute bottom-0 left-0 h-0.5 w-full bg-[#0B3A36]" />
+        )}
+      </Link>
+    );
+  })}
+</nav>
 
         {/* CTA + Mobile Button */}
         <div className="flex items-center space-x-3">
