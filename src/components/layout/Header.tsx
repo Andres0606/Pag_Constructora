@@ -69,29 +69,29 @@ export default function Header() {
             <div className="absolute left-0 top-full pt-2 w-64">
               <div className="overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg">
 
-                <Link
-                  href="/servicios/consultoria"
-                  onClick={() => setServicesOpen(false)}
-                  className="block px-5 py-3 text-sm transition-colors hover:bg-gray-50 hover:text-[#0B3A36]"
-                >
-                  Consultoría
-                </Link>
+                    <Link
+      href="/servicios/consultoria"
+      onClick={() => setServicesOpen(false)}
+      className="block px-5 py-3 text-sm font-medium text-gray-800 transition-colors hover:bg-gray-50 hover:text-[#0B3A36]"
+    >
+      Consultoría
+    </Link>
 
                 <Link
-                  href="/servicios/patologias"
-                  onClick={() => setServicesOpen(false)}
-                  className="block px-5 py-3 text-sm transition-colors hover:bg-gray-50 hover:text-[#0B3A36]"
-                >
-                  Patologías de Obra
-                </Link>
+  href="/servicios/patologias"
+  onClick={() => setServicesOpen(false)}
+  className="block px-5 py-3 text-sm font-medium text-gray-800 transition-colors hover:bg-gray-50 hover:text-[#0B3A36]"
+>
+  Patologías de Obra
+</Link>
 
-                <Link
-                  href="/servicios/estructuras-madera"
-                  onClick={() => setServicesOpen(false)}
-                  className="block px-5 py-3 text-sm transition-colors hover:bg-gray-50 hover:text-[#0B3A36]"
-                >
-                  Estructuras en Madera
-                </Link>
+               <Link
+  href="/servicios/estructuras-madera"
+  onClick={() => setServicesOpen(false)}
+  className="block px-5 py-3 text-sm font-medium text-gray-800 transition-colors hover:bg-gray-50 hover:text-[#0B3A36]"
+>
+  Estructuras en Madera
+</Link>
 
               </div>
             </div>
