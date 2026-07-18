@@ -37,31 +37,33 @@ export default function EstructurasMaderaPage() {
 
               <div className="mt-10 border-t pt-8">
                 <ul className="space-y-5">
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Cálculo estructural avanzado.
-                  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Diseño de uniones y conexiones.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Cálculo estructural avanzado.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Modelado BIM y detallado 3D.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Diseño de uniones y conexiones.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Optimización de materiales.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Modelado BIM y detallado 3D.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Diseño sismo-resistente y protección contra incendio.
-                  </li>
-                </ul>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Optimización de materiales.</span>
+  </li>
+
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Diseño sismo-resistente y protección contra incendio.</span>
+  </li>
+
+</ul>
               </div>
             </div>
           </div>

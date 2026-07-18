@@ -32,32 +32,32 @@ export default function PatologiasPage() {
 
                 <ul className="space-y-5">
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Inspecciones estructurales.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Inspecciones estructurales.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Ensayos de ultrasonido.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Ensayos de ultrasonido.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Esclerometría.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Esclerometría.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Estudios de carbonatación.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Estudios de carbonatación.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Diseño de soluciones de reparación.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Diseño de soluciones de reparación.</span>
+  </li>
 
-                </ul>
+</ul>
 
               </div>
 

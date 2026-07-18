@@ -42,32 +42,32 @@ export default function ConsultoriaPage() {
 
                 <ul className="space-y-5">
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Estudios de Factibilidad Técnica.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Estudios de Factibilidad Técnica.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Gestión Integral de Proyectos.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Gestión Integral de Proyectos.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Diseños estructurales optimizados.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Diseños estructurales optimizados.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Supervisión técnica especializada.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Supervisión técnica especializada.</span>
+  </li>
 
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="text-[#0E7A6E]" />
-                    Cumplimiento NSR-10, ACI y Eurocódigos.
-                  </li>
+  <li className="flex items-start gap-3 text-gray-800">
+    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0E7A6E]" />
+    <span>Cumplimiento NSR-10, ACI y Eurocódigos.</span>
+  </li>
 
-                </ul>
+</ul>
 
               </div>
 
