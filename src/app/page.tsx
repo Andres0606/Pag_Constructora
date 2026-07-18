@@ -38,7 +38,7 @@ export default function Home() {
 📝 Detalles del proyecto:
 ${message}`;
 
-    const url = `https://wa.me/573194477410?text=${encodeURIComponent(
+    const url = `https://wa.me/573106392432?text=${encodeURIComponent(
       whatsappMessage
     )}`;
 
@@ -187,7 +187,7 @@ ${message}`;
                     </h4>
 
                     <p className="text-xs text-gray-600 mt-1">
-                      +57 319 447 7410
+                      +57 310 6392432
                     </p>
                   </div>
                 </div>
