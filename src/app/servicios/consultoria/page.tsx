@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import CatalogoTecnico from "@/components/sections/catalogo/CatalogoTecnico";
 
 export default function ConsultoriaPage() {
   return (
@@ -76,6 +77,8 @@ export default function ConsultoriaPage() {
 
         </div>
       </section>
+
+      <CatalogoTecnico />
 
     </div>
   );

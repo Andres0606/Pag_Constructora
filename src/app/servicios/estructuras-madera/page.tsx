@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import CatalogoTecnico from "@/components/sections/catalogo/CatalogoTecnico";
 
 export default function EstructurasMaderaPage() {
   return (
@@ -66,6 +67,8 @@ export default function EstructurasMaderaPage() {
           </div>
         </div>
       </section>
+
+      <CatalogoTecnico />
     </div>
   );
 }
